@@ -164,3 +164,17 @@ exercises.c:104:15: error: assignment to ‘void *’ from ‘int’ makes point
 cc1: all warnings being treated as errors
 Compilation failed
 17bafe9
+Thu 21 Mar 2024 03:43:33 PM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:106:17: error: implicit declaration of function ‘Front’ [-Werror=implicit-function-declaration]
+  106 |   while((dato = Front(Paux)) != NULL)
+      |                 ^~~~~
+exercises.c:106:15: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  106 |   while((dato = Front(Paux)) != NULL)
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+c9862e8
