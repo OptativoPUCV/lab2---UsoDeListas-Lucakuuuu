@@ -99,3 +99,14 @@ exercises.c:62:22: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ce223fe
+Thu 21 Mar 2024 03:31:47 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:62:22: error: unused variable ‘i’ [-Werror=unused-variable]
+   62 |   int sumatoria = 0, i;
+      |                      ^
+cc1: all warnings being treated as errors
+Compilation failed
+dc76d71
