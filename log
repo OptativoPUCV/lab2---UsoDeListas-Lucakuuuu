@@ -139,3 +139,9 @@ exercises.c:104:14: error: ‘dato’ is used uninitialized [-Werror=uninitializ
 cc1: all warnings being treated as errors
 Compilation failed
 6b45f48
+Thu 21 Mar 2024 03:37:55 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  3|2
+total_score: 40/70
+5d7b005
