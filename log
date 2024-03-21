@@ -82,3 +82,20 @@ Thu 21 Mar 2024 03:27:57 PM UTC:
  tests:  1|4
 total_score: 10/70
 9487ae4
+Thu 21 Mar 2024 03:31:12 PM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:26: error: expected expression before ‘List’
+   63 |   void *elemento = first(List *L);
+      |                          ^~~~
+exercises.c:67:23: error: expected expression before ‘List’
+   67 |       elemento = next(List *L);
+      |                       ^~~~
+exercises.c:62:22: error: unused variable ‘i’ [-Werror=unused-variable]
+   62 |   int sumatoria = 0, i;
+      |                      ^
+cc1: all warnings being treated as errors
+Compilation failed
+ce223fe
