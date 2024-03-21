@@ -42,8 +42,15 @@ Al finalizar retorna la lista creada.
 */
 
 List* crea_lista() {
-   List* L = create_list();
-   return L;
+  List* L = create_list();
+  int i, valor;
+  for(i = 1; i < 11; i++)
+    {
+      *valor = malloc(sizeof(int));
+      push(L, valor);
+    }
+  imprime_lista(List *L);
+  return L;
 }
 
 /*
