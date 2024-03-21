@@ -27,3 +27,28 @@ exercises.c:52:17: error: expected expression before ‘List’
 cc1: all warnings being treated as errors
 Compilation failed
 54e1434
+Thu 21 Mar 2024 03:26:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:13: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   49 |       valor = malloc(sizeof(int));
+      |             ^
+exercises.c:50:15: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+   50 |       push(L, valor);
+      |               ^~~~~
+      |               |
+      |               int
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:52:17: error: expected expression before ‘List’
+   52 |   imprime_lista(List *L);
+      |                 ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3988773
