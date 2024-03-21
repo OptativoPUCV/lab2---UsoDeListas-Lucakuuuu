@@ -47,9 +47,9 @@ List* crea_lista() {
   for(i = 1; i < 11; i++)
     {
       valor = malloc(sizeof(int));
+      *valor = i;
       push(L, valor);
     }
-  imprime_lista(List *L);
   return L;
 }
 
